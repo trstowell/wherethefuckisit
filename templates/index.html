@@ -1,5 +1,27 @@
 <html ng-app="trstowell">
-<title>
-    TRStowell
-</title>
+<head>
+    <title>
+        TRStowell
+    </title>
+    <base href="/index.html"></base>
+
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main-container">
+        <div id="header">
+
+        </div>
+        <div id="content">
+            <ng-view>
+                <!-- Here is where our partial HTML files will be injected -->
+            </ng-view>
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+</body>
 </html>
