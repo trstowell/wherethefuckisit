@@ -1,4 +1,4 @@
-var app = angular.module("SWIM", ['ui.bootstrap','ngRoute']);
+var app = angular.module("SWIM", ['ngRoute']);
 
 app.config(['$httpProvider', function ($httpProvider) {
     $httpProvider.defaults.useXDomain = true;
@@ -13,7 +13,7 @@ app.config(['$interpolateProvider', function($interpolateProvider) {
 app.config( function($routeProvider, $locationProvider) {
      $routeProvider.
          when('/', {
-             templateUrl: '/static/partials/home.html'
+             templateUrl: '/static/partials/minimal.html'
          }).
          otherwise({
              redirectTo: '/'

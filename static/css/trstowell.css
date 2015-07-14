@@ -9,12 +9,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 50px;
 }
 
 html,body {
-    height:100%;
-    font-family:'Century Gothic';
+    height: 100%;
+    font-family: 'Lucida Console';
 }
 
 html {
@@ -28,9 +27,8 @@ body {
 .page-container {
     width: 100%;
     min-height: 100%;
-    /*margin: 0 auto -30px;*/
     margin: 0 auto;
-
+    padding: 5px;
 }
 
 /************ HEADER ************/
@@ -39,12 +37,28 @@ body {
 
 /************ FOOTER ************/
 
+
+
+.name-line {
+    font-size: 50px;
+}
+
+.profession-line {
+    font-size: 40px;
+}
+
+.interest-line {
+    font-size: 30px;
+}
+
+.hire-line {
+    font-size: 25px;
+}
+
 .contact-icon {
     padding: 1px 0px 1px 1px;
     font-size: 30px;
 }
-
-
 
 .tiffany-opaque-bg {
     background-color: rgba(129, 216, 208, .2) !important;
