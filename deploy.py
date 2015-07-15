@@ -27,9 +27,9 @@ def deploy():
         run('tar -zcvf %s %s' %  (tar_filename, env.repo))
         run('mv %s /backups' % tar_filename)
         run('rm -r %s' % env.repo)
-        run('git clone http://pygit.lss.emc.com/root/SWIM.git')
+        run('git fetch')
 
-    run('supervisorctl restart gunicorn')
+    run('supervisorctl -c /etc/supervisor/supervisor.conf restart gunicorn')
 
 def full_install():
     setup_directories()
@@ -52,7 +52,7 @@ def install_git():
     run('apt-get install -y git')
 
 def clone_repo():
-    with cd('/app/%s' % env.repo):
+    with cd('/app'):
         run('git clone http://github.com/trstowell/trstowell.git') # Manually enter Git password
 
     with cd(env.repo_root):
