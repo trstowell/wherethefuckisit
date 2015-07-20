@@ -18,7 +18,7 @@ env.password = "wrt54g00"
 env.repo = "trstowell"
 env.repo_root = "/app/%s" % env.repo
 
-env.hosts = ["45.55.81.255"]
+env.hosts = ["trstowell.com"]
 
 def deploy():
 
