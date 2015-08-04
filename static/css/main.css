@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height:100%;
+    font-family:'Verdana';
+    /*background-color: #EEEEEE;*/
+}
+
+
+
+body {
+    color: #444;
+    min-width: 650px;
+    overflow: hidden;
+}
+
+
+
+/************ COLORS ************/
+/*
+    81D8D0 Tiffany Blue
+    B8DBFF Light Tiffany Blue
+    7E7E80 asset-description (light grey)
+    rgba(204, 204, 204, .5) Footer <hr>/Dividers
+*/
+
+/************ HEADER ************/
+#header {
+
+}
+
+
+/************ CONTENT ************/
+#content {
+    width: 100%;  /* (100% - padding-left) if we have sidebar */
+    padding-top: 140px;
+    /*overflow: auto;*/
+    display: table;
+    /*height: 700px;*/
+    margin-bottom: 300px;
+}
+
+/************ FOOTER ************/
+
+#footer{
+    clear:both;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    color: #7E7E80;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#footer hr {
+    position: relative;
+    width: 50%;
+    bottom: 10px;
+    margin: 0 auto;
+    color: 1px auto rgba(204, 204, 204, .5);
+}
+/************ LOGIN VIEW ************/
+
+div #sendContent {
+    display: block;
+    margin: 0 auto;
+    width: 650px;
+}
+
+div #call-container {
+    /*margin: 10px;*/
+    margin: 0 auto;
+    width: 300px;
+    /*height: 300px;*/
+    /*float: left;*/
+    /*overflow: hidden;*/
+}
+
+div #text-container {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+
+
+
+
+.input-widget {
+    margin-bottom: 15px;
+}
+
+.send-button {
+    color: rgba(0, 0, 0, .75);
+    border-style: none;
+}
+
+.send-button:focus,
+.send-button:hover,
+.send-button:active
+{
+    outline: none;
+}
+
+.hidden-button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor:pointer;
+    outline:none;
+}
+
+.btn {
+    /*border-radius: 0;*/
+}
+
+.tiffany-opaque{
+    background-color: rgba(129, 216, 208, .2) !important;
+    /*background-color: rgba(250, 180, 255, .2) !important;*/
+}
+.tiffany {
+    background-color: #81D8D0;
+}
+.tiffany-color {
+    color: #81D8D0;
+}
+
+.nakedLink {
+    text-decoration: none;
+}
+
+.button-hover:hover{
+    box-shadow: 1px -1px 1px #CCC;
+}
+
+.inl-blk {
+    display: inline-block;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}

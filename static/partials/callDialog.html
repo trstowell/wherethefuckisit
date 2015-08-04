@@ -1,0 +1,11 @@
+<div ng-controller="CallController">
+    <div id="dialog-header">
+        <h3>Calling: <code>{[callData.toFormatted]}</code></h3>
+    </div>
+
+    <hr><!-- ------------------------------------------------- -->
+
+    <div id="dialog-content">
+        <button class="btn btn-info" ng-click="closeAllDialogsPls() && call()">Re-try</button>
+    </div>
+</div>

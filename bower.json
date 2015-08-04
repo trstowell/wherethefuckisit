@@ -10,7 +10,7 @@
     "angular-ui-bootstrap": "http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.min.js"
   },
   "version": "0.0.0",
-  "description": "trstowell.com is the personal site of Timothy Stowell",
+  "description": "wherethefuckisit.org app",
   "main": "index.html",
   "ignore": [
     "static/lib"
