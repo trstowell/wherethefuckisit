@@ -1,15 +1,15 @@
 <div id="sendContent" ng-controller="SendController">
 
     <!--<div id="call-container" class="well inl-blk">-->
-    <div id="call-container" class="well">
-        <h4>Where the fuck is it?!</h4>
+    <div id="call-container" class="well text-center">
+        <h3>Where the fuck is it?!</h3>
         <br>
         <form name="callForm" ng-submit="call()">
             <div class="input-group input-widget">
                 <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
-                <input ng-model="callData.to" name="toNumber" class="form-control" type="text" placeholder="Phone #" minlength="10" maxlength="10" required autofocus>
+                <input ng-model="callData.to" name="toNumber" class="form-control" type="text" placeholder="10-digit number" minlength="10" maxlength="10" required autofocus>
             </div>
-            <input type="submit" value="Call" class="btn send-button tiffany btn-block input-widget">
+            <input type="submit" value="Call me" class="turquoise-flat-button btn btn-block input-widget">
         </form>
     </div>
 

@@ -1,11 +1,14 @@
 <div ng-controller="CallController">
     <div id="dialog-header">
-        <h3>Calling: <code>{[callData.toFormatted]}</code></h3>
+        <h3 style="text-align: center;">{[callData.toFormatted]}</h3>
     </div>
-
-    <hr><!-- ------------------------------------------------- -->
-
-    <div id="dialog-content">
-        <button class="btn btn-info" ng-click="closeAllDialogsPls() && call()">Re-try</button>
+    <br>
+    <br>
+    <div id="dialog-content" class="text-center">
+        <i class="fa fa-phone fa-2x faa-shake animated" style="color: green;"></i>
+    </div>
+    <br><br>
+    <div id="dialog-footer">
+        <button class="red-flat-button btn btn-block input-widget" ng-click="closeAllDialogsPls()">End</button>
     </div>
 </div>

@@ -14,9 +14,8 @@ app.config(['ngDialogProvider', function (ngDialogProvider) {
     ngDialogProvider.setDefaults({
         className: 'ngdialog-theme-default',
         showClose: true,
-        closeByDocument: true,
+        closeByDocument: false,
         closeByEscape: true,
-        animationEndSupport: false
     });
 }]);
 
@@ -43,9 +42,9 @@ app.controller("SendController", function($scope, ngDialog){
     $scope.callData = {};
 
     $scope.call = function(){
-        $scope.callData.toFormatted = "(".concat($scope.callData.to.slice(0,3)).concat(")")
-            .concat("-").concat($scope.callData.to.slice(3,6))
-            .concat("-").concat($scope.callData.to.slice(6,11));
+        $scope.callData.toFormatted = "+1 (".concat($scope.callData.to.slice(0,3)).concat(")")
+            .concat(" - ").concat($scope.callData.to.slice(3,6))
+            .concat(" - ").concat($scope.callData.to.slice(6,11));
 
         console.log($scope.callData.toFormatted);
         console.log("Calling: ".concat($scope.callData.to));
