@@ -37,7 +37,7 @@ app.controller("MainController", function ($scope, ngDialog) {
 
 });
 
-app.controller("SendController", function($scope, ngDialog){
+app.controller("SendController", function($scope, $http, ngDialog){
 
     $scope.callData = {};
 
@@ -48,6 +48,9 @@ app.controller("SendController", function($scope, ngDialog){
 
         console.log($scope.callData.toFormatted);
         console.log("Calling: ".concat($scope.callData.to));
+
+        $http.get("http://127.0.0.1:6969/call/".concat($scope.callData.to));
+
         $scope.openDialog();
 
     };
